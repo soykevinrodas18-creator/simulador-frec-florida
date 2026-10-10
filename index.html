@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador Oficial FREC Sales Associate Florida - 200 Preguntas Clave</title>
+  <meta name="description" content="Simulador de examen interactivo para la licencia de Bienes Raíces de Florida (FREC Sales Associate). Banco oficial de 200 preguntas con respuestas, retroalimentación y flashcards.">
+  
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top App Navigation Bar -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-section">
+        <div class="brand-logo">🏛️</div>
+        <div class="brand-text">
+          <h1>FREC Master Pro <span class="brand-badge">Florida Real Estate</span></h1>
+          <p>Simulador Oficial &amp; Guía de Memorización (200 Preguntas)</p>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <div class="header-stat-pill" title="Mejor calificación obtenida en examen">
+          🏆 Récord: <span id="header-best-score" class="highlight">0%</span>
+        </div>
+        <div class="header-stat-pill" title="Preguntas guardadas en favoritos">
+          ⭐ <span id="header-fav-count">0</span>
+        </div>
+        <button id="sound-toggle-btn" class="icon-btn" title="Activar/Desactivar Sonido">🔊</button>
+        <button id="theme-toggle-btn" class="icon-btn" title="Cambiar Tema">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mode Navigation Tabs -->
+  <nav class="mode-nav-wrapper">
+    <div class="mode-nav-container">
+      <button class="nav-tab-btn active" data-tab="exam">
+        <span>🎯 Modo Examen FREC</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="practice">
+        <span>⚡ Práctica Inmediata</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="flashcards">
+        <span>🗂️ Flashcards (Memoria)</span>
+      </button>
+      <button class="nav-tab-btn" data-tab="guide">
+        <span>📖 Guía de Preguntas &amp; Búsqueda</span>
+        <span class="badge">200 Q&amp;A</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content Body -->
+  <main class="main-content">
+
+    <!-- ========================================== -->
+    <!-- VIEW 1: MODO EXAMEN FREC                   -->
+    <!-- ========================================== -->
+    <section id="view-exam" class="tab-view active">
+      
+      <!-- Exam Setup Screen -->
+      <div id="exam-setup-screen" class="simulator-panel">
+        <div class="setup-hero">
+          <h2>Simulador de Examen de Bienes Raíces FREC</h2>
+          <p>Pon a prueba tus conocimientos con el formato del examen oficial del estado de Florida. Necesitas un 75% o más para aprobar (Pearson VUE).</p>
+        </div>
+
+        <div class="setup-grid">
+          <label class="setup-option-card">
+            <input type="radio" name="exam-count" value="100" checked style="position: absolute; opacity: 0;">
+            <div class="card-icon">⏱️</div>
+            <h3>Examen Estándar FREC (100 Preguntas)</h3>
+            <p>Idéntico a la cantidad del examen estatal en Pearson VUE. 100 preguntas aleatorias.</p>
+          </label>
+
+          <label class="setup-option-card">
+            <input type="radio" name="exam-count" value="200" style="position: absolute; opacity: 0;">
+            <div class="card-icon">📚</div>
+            <h3>Maratón Completo (Las 200 Preguntas)</h3>
+            <p>Responde el banco íntegro de las 200 preguntas para una preparación exhaustiva.</p>
+          </label>
+
+          <label class="setup-option-card">
+            <input type="radio" name="exam-count" value="50" style="position: absolute; opacity: 0;">
+            <div class="card-icon">⚡</div>
+            <h3>Test Rápido (50 Preguntas)</h3>
+            <p>Ideal para repasos ágiles cuando dispones de menos de 45 minutos.</p>
+          </label>
+
+          <label class="setup-option-card">
+            <input type="radio" name="exam-count" value="favs" style="position: absolute; opacity: 0;">
+            <div class="card-icon">⭐</div>
+            <h3>Solo Mis Favoritos</h3>
+            <p>Genera un examen personalizado solo con las preguntas que has marcado con estrella.</p>
+          </label>
+        </div>
+
+        <div class="setup-controls-row">
+          <div class="setting-item">
+            <label for="exam-time-limit">Límite de Tiempo:</label>
+            <select id="exam-time-limit" class="custom-select">
+              <option value="210">3 Horas y Media (Oficial FREC - 210 min)</option>
+              <option value="120">2 Horas (120 min)</option>
+              <option value="60">1 Hora (60 min)</option>
+              <option value="0">Sin límite de tiempo (Práctica libre)</option>
+            </select>
+          </div>
+
+          <div class="setting-item">
+            <label for="exam-category-select">Filtrar por Tema:</label>
+            <select id="exam-category-select" class="custom-select">
+              <option value="all">Todas las Categorías (200 Preguntas)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <button id="start-exam-btn" class="btn-primary">
+            🚀 Iniciar Examen Ahora
+          </button>
+        </div>
+      </div>
+
+      <!-- Active Exam Screen -->
+      <div id="exam-active-screen" class="simulator-panel" style="display: none;">
+        <div class="exam-header-bar">
+          <div class="exam-meta-group">
+            <span id="exam-question-category" class="category-tag">Corretaje</span>
+            <span id="exam-q-number-indicator" class="question-number-text">Pregunta 1 de 100</span>
+          </div>
+
+          <div class="exam-meta-group">
+            <div id="exam-timer-display" class="exam-timer">⏱️ 03:30:00</div>
+            <button id="exam-flag-btn" class="flag-btn">🏳️ Marcar</button>
+            <button id="exam-fav-btn" class="flag-btn">☆ Guardar</button>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+          <div id="exam-progress-bar-fill" class="progress-bar-fill"></div>
+        </div>
+
+        <!-- Question Section -->
+        <div class="question-container">
+          <h2 id="exam-question-text" class="question-text">Texto de la pregunta...</h2>
+          <div id="exam-options-list" class="options-list">
+            <!-- Dynamic Options injected here -->
+          </div>
+
+          <!-- Explanation box when in review mode -->
+          <div id="exam-review-feedback" class="feedback-box"></div>
+        </div>
+
+        <!-- Footer Navigation Controls -->
+        <div class="exam-footer-controls">
+          <button id="exam-finish-btn" class="btn-danger">
+            🏁 Entregar Examen
+          </button>
+
+          <div class="navigation-buttons">
+            <button id="exam-prev-btn" class="btn-secondary">
+              ❮ Anterior
+            </button>
+            <button id="exam-next-btn" class="btn-primary" style="max-width: 180px;">
+              Siguiente ❯
+            </button>
+          </div>
+        </div>
+
+        <!-- Question Drawer / Palette -->
+        <div class="palette-container">
+          <div class="palette-header">
+            <span style="font-size: 0.88rem; font-weight: 700;">Navegación de Preguntas:</span>
+            <div class="palette-legend">
+              <span class="legend-item"><span class="legend-dot dot-answered"></span> Respondida</span>
+              <span class="legend-item"><span class="legend-dot dot-flagged"></span> Marcada</span>
+              <span class="legend-item"><span class="legend-dot dot-unanswered"></span> Pendiente</span>
+            </div>
+          </div>
+          <div id="exam-palette-grid" class="palette-grid">
+            <!-- Dynamic Question numbers 1..N -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Exam Results Screen -->
+      <div id="exam-results-screen" class="simulator-panel" style="display: none;">
+        <div class="results-card">
+          <div id="results-score-badge" class="score-badge-large passed">
+            <div id="results-score-percent" class="score-percent">88%</div>
+            <div id="results-score-fraction" class="score-fraction">88/100</div>
+          </div>
+
+          <h2 id="results-verdict" class="results-verdict passed">¡APROBADO! 🎉</h2>
+          <p id="results-summary-text" class="results-summary-text">
+            Has superado el examen de prueba satisfactoriamente.
+          </p>
+
+          <div class="results-stats-row">
+            <div class="result-stat-box">
+              <div id="result-stat-correct" class="result-stat-val" style="color: var(--success);">88</div>
+              <div class="result-stat-label">Aciertos</div>
+            </div>
+            <div class="result-stat-box">
+              <div id="result-stat-incorrect" class="result-stat-val" style="color: var(--danger);">12</div>
+              <div class="result-stat-label">Fallos</div>
+            </div>
+            <div class="result-stat-box">
+              <div id="result-stat-time" class="result-stat-val">42:15</div>
+              <div class="result-stat-label">Tiempo Invertido</div>
+            </div>
+            <div class="result-stat-box">
+              <div class="result-stat-val" style="color: var(--accent-primary);">75%</div>
+              <div class="result-stat-label">Mínimo FREC</div>
+            </div>
+          </div>
+
+          <div id="results-category-breakdown" class="category-breakdown-section">
+            <!-- Dynamic breakdown injected here -->
+          </div>
+
+          <div class="results-actions-group">
+            <button id="results-review-btn" class="btn-primary" style="max-width: 240px;">
+              🔍 Revisar Respuestas y Fallos
+            </button>
+            <button id="results-retry-btn" class="btn-secondary">
+              🔄 Configurar Nuevo Examen
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW 2: MODO PRÁCTICA INMEDIATA           -->
+    <!-- ========================================== -->
+    <section id="view-practice" class="tab-view">
+      <div class="simulator-panel">
+        <div class="exam-header-bar">
+          <div class="exam-meta-group">
+            <span id="practice-question-category" class="category-tag">Corretaje</span>
+            <span id="practice-q-number-indicator" class="question-number-text">Pregunta 1 de 200</span>
+          </div>
+
+          <div class="exam-meta-group">
+            <div class="setting-item">
+              <label for="practice-category-select">Tema:</label>
+              <select id="practice-category-select" class="custom-select">
+                <option value="all">Todas las Categorías</option>
+              </select>
+            </div>
+            <button id="practice-fav-btn" class="flag-btn">☆ Guardar</button>
+          </div>
+        </div>
+
+        <div class="question-container">
+          <h2 id="practice-question-text" class="question-text">Pregunta de práctica...</h2>
+          <div id="practice-options-list" class="options-list">
+            <!-- Injected options -->
+          </div>
+          <div id="practice-feedback-box" class="feedback-box">
+            <!-- Injected Instant feedback -->
+          </div>
+        </div>
+
+        <div class="exam-footer-controls">
+          <div>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">
+              💡 <em>Selecciona una opción para ver la respuesta correcta y la explicación oficial.</em>
+            </span>
+          </div>
+          <div class="navigation-buttons">
+            <button id="practice-prev-btn" class="btn-secondary">❮ Anterior</button>
+            <button id="practice-next-btn" class="btn-primary" style="max-width: 180px;">Siguiente ❯</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW 3: MODO FLASHCARDS (MEMORIZACIÓN)    -->
+    <!-- ========================================== -->
+    <section id="view-flashcards" class="tab-view">
+      <div class="simulator-panel flashcards-container">
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span id="flashcard-category-tag" class="category-tag">Corretaje</span>
+            <span id="flashcard-counter" class="question-number-text">Tarjeta 1 de 200</span>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <select id="flashcards-category-select" class="custom-select">
+              <option value="all">Todas las Categorías</option>
+            </select>
+            <button id="flashcard-fav-btn" class="icon-btn" title="Favorito">☆</button>
+          </div>
+        </div>
+
+        <!-- 3D Card -->
+        <div id="flashcard-card" class="flashcard-wrapper">
+          <div class="flashcard-inner">
+            <!-- Front -->
+            <div class="flashcard-front">
+              <div class="card-hint-text">PREGUNTA FREC (Haz clic para voltear) 👆</div>
+              <div id="flashcard-front-text" class="flashcard-q-text">Pregunta...</div>
+              <div class="card-hint-text">🔄 Toca o presiona Barra Espaciadora para ver la respuesta</div>
+            </div>
+            <!-- Back -->
+            <div class="flashcard-back">
+              <div class="card-hint-text" style="color: #6ee7b7;">RESPUESTA OFICIAL VERIFICADA ✓</div>
+              <div id="flashcard-back-text" class="flashcard-a-text">Respuesta...</div>
+              <div id="flashcard-explanation-text" class="flashcard-explain-text">Explicación...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flashcard Controls -->
+        <div class="flashcard-controls">
+          <button id="flashcard-prev-btn" class="btn-secondary">❮ Anterior</button>
+          <button id="flashcard-flip-btn" class="btn-secondary">🔄 Voltear Tarjeta</button>
+          <button id="flashcard-next-btn" class="btn-primary" style="max-width: 180px;">Siguiente ❯</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW 4: GUÍA COMPLETA & BÚSQUEDA           -->
+    <!-- ========================================== -->
+    <section id="view-guide" class="tab-view">
+      <div class="simulator-panel">
+        
+        <div class="guide-toolbar">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="guide-search-input" placeholder="Buscar por término (ej. escrow, PITT, homestead, NOI, 640 acres...)" />
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <select id="guide-category-select" class="custom-select">
+              <option value="all">Todas las Categorías</option>
+            </select>
+            <button id="guide-toggle-answers-btn" class="btn-secondary">
+              🙈 Ocultar Respuestas para Autoevaluación
+            </button>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-secondary); display: flex; justify-content: space-between;">
+          <span id="guide-count-indicator">Mostrando 200 de 200 preguntas</span>
+          <span>Basado en el Banco de Preguntas FREC Sales Associate</span>
+        </div>
+
+        <div id="guide-items-container" class="guide-items-list">
+          <!-- Injected List -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Confirmation Modal -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-content">
+      <h3 id="modal-title" class="modal-title">Título Modal</h3>
+      <div id="modal-body" class="modal-body">Mensaje...</div>
+      <div class="modal-buttons">
+        <button id="modal-cancel-btn" class="btn-secondary">Continuar Examen</button>
+        <button id="modal-confirm-btn" class="btn-danger">Confirmar y Entregar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Scripts -->
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
