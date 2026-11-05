@@ -147,6 +147,13 @@
       categoryFilter: 'all',
       sectionFilter: 'all',
       hideAnswers: false
+    },
+
+    // New 100 Questions State
+    new100: {
+      searchQuery: '',
+      categoryFilter: 'all',
+      hideAnswers: false
     }
   };
 
@@ -224,13 +231,14 @@
   }
 
   function populateCategorySelectors() {
-    const selectors = ['exam-category-select', 'practice-category-select', 'flashcards-category-select', 'guide-category-select'];
+    const selectors = ['exam-category-select', 'practice-category-select', 'flashcards-category-select', 'guide-category-select', 'new100-category-select'];
     selectors.forEach(id => {
       const el = document.getElementById(id);
       if (!el) return;
-      el.innerHTML = `<option value="all">Todas las Categorías (${state.allQuestions.length} Preguntas)</option>`;
+      const pool = id === 'new100-category-select' ? state.allQuestions.filter(q => q.id > 200) : state.allQuestions;
+      el.innerHTML = `<option value="all">Todas las Categorías (${pool.length} Preguntas)</option>`;
       state.categories.forEach(cat => {
-        const count = state.allQuestions.filter(q => q.category === cat).length;
+        const count = pool.filter(q => q.category === cat).length;
         const opt = document.createElement('option');
         opt.value = cat;
         opt.textContent = `${cat} (${count} preguntas)`;
@@ -460,6 +468,25 @@
       soundSystem.playClick();
     });
 
+    const new100SearchInput = document.getElementById('new100-search-input');
+    new100SearchInput.addEventListener('input', (e) => {
+      state.new100.searchQuery = e.target.value.toLowerCase().trim();
+      filterAndRenderNew100();
+    });
+
+    document.getElementById('new100-category-select').addEventListener('change', (e) => {
+      state.new100.categoryFilter = e.target.value;
+      filterAndRenderNew100();
+    });
+
+    document.getElementById('new100-toggle-answers-btn').addEventListener('click', () => {
+      state.new100.hideAnswers = !state.new100.hideAnswers;
+      const btn = document.getElementById('new100-toggle-answers-btn');
+      btn.textContent = state.new100.hideAnswers ? '👁️ Mostrar Respuestas' : '🙈 Ocultar Respuestas para Autoevaluación';
+      filterAndRenderNew100();
+      soundSystem.playClick();
+    });
+
     // Keyboard Shortcuts
     window.addEventListener('keydown', (e) => {
       // Don't trigger shortcuts if inside search input
@@ -527,6 +554,8 @@
       initFlashcards();
     } else if (tabName === 'guide') {
       filterAndRenderGuide();
+    } else if (tabName === 'new100') {
+      filterAndRenderNew100();
     }
   }
 
@@ -1090,6 +1119,75 @@
         e.stopPropagation();
         toggleFavorite(q.id);
         filterAndRenderGuide();
+      });
+
+      container.appendChild(card);
+    });
+  }
+
+  // --- 100 PREGUNTAS NUEVAS (201-300) ---
+  function filterAndRenderNew100() {
+    const query = state.new100.searchQuery;
+    const cat = state.new100.categoryFilter;
+
+    let filtered = state.allQuestions.filter(q => {
+      if (q.id <= 200) return false;
+      const matchCat = cat === 'all' || q.category === cat;
+      const matchText = !query ||
+        q.question.toLowerCase().includes(query) ||
+        q.answer.toLowerCase().includes(query) ||
+        q.explanation.toLowerCase().includes(query) ||
+        q.id.toString() === query;
+      return matchCat && matchText;
+    });
+
+    const countIndicator = document.getElementById('new100-count-indicator');
+    countIndicator.textContent = `Mostrando ${filtered.length} de 100 preguntas nuevas`;
+
+    const container = document.getElementById('new100-items-container');
+    container.innerHTML = '';
+
+    if (filtered.length === 0) {
+      container.innerHTML = `
+        <div style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔍</div>
+          <h3>No se encontraron preguntas nuevas que coincidan</h3>
+          <p>Prueba con otros términos de búsqueda como "escrow", "homestead", "título", etc.</p>
+        </div>
+      `;
+      return;
+    }
+
+    filtered.forEach(q => {
+      const card = document.createElement('div');
+      card.className = 'guide-item-card';
+
+      const isFav = state.favorites.has(q.id);
+
+      card.innerHTML = `
+        <div class="guide-card-top">
+          <span class="category-tag">${q.category}</span>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <span class="guide-card-num">#${q.id}</span>
+            <button class="icon-btn" style="width: 28px; height: 28px; font-size: 0.8rem;" title="Marcar favorito" data-fav-id="${q.id}">
+              ${isFav ? '⭐' : '☆'}
+            </button>
+          </div>
+        </div>
+        <div class="guide-card-q">${q.question}</div>
+        <div class="guide-card-a" style="${state.new100.hideAnswers ? 'display: none;' : ''}">
+          <span>✓</span>
+          <div>${q.answer}</div>
+        </div>
+        <div class="guide-card-note" style="${state.new100.hideAnswers ? 'display: none;' : ''}">
+          💡 <strong>Nota FREC:</strong> ${q.explanation}
+        </div>
+      `;
+
+      card.querySelector('[data-fav-id]').addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleFavorite(q.id);
+        filterAndRenderNew100();
       });
 
       container.appendChild(card);

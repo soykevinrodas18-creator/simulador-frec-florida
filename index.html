@@ -56,6 +56,10 @@
         <span>📖 Guía de Preguntas &amp; Búsqueda</span>
         <span class="badge">300 Q&amp;A</span>
       </button>
+      <button class="nav-tab-btn" data-tab="new100">
+        <span>🆕 100 Nuevas</span>
+        <span class="badge">201-300</span>
+      </button>
     </div>
   </nav>
 
@@ -377,6 +381,45 @@
         </div>
 
         <div id="guide-items-container" class="guide-items-list">
+          <!-- Injected List -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- VIEW 5: 100 PREGUNTAS NUEVAS (201-300)     -->
+    <!-- ========================================== -->
+    <section id="view-new100" class="tab-view">
+      <div class="simulator-panel">
+
+        <div class="setup-hero">
+          <h2>100 Preguntas Nuevas (201-300)</h2>
+          <p>Sección aparte con solo las 100 preguntas nuevas del banco. Cada una con su respuesta correcta y su explicación.</p>
+        </div>
+
+        <div class="guide-toolbar">
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="new100-search-input" placeholder="Buscar por término (ej. escrow, homestead, NOI...)" />
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <select id="new100-category-select" class="custom-select">
+              <option value="all">Todas las Categorías</option>
+            </select>
+            <button id="new100-toggle-answers-btn" class="btn-secondary">
+              🙈 Ocultar Respuestas para Autoevaluación
+            </button>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-secondary); display: flex; justify-content: space-between;">
+          <span id="new100-count-indicator">Mostrando 100 de 100 preguntas nuevas</span>
+          <span>Solo preguntas 201-300</span>
+        </div>
+
+        <div id="new100-items-container" class="guide-items-list">
           <!-- Injected List -->
         </div>
 
