@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador Oficial FREC Sales Associate Florida - 200 Preguntas Clave</title>
-  <meta name="description" content="Simulador de examen interactivo para la licencia de Bienes Raíces de Florida (FREC Sales Associate). Banco oficial de 200 preguntas con respuestas, retroalimentación y flashcards.">
+  <title>Simulador Oficial FREC Sales Associate Florida - 300 Preguntas Clave</title>
+  <meta name="description" content="Simulador de examen interactivo para la licencia de Bienes Raíces de Florida (FREC Sales Associate). Banco oficial de 300 preguntas con respuestas, retroalimentación y flashcards.">
   
   <!-- Google Fonts Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
         <div class="brand-logo">🏛️</div>
         <div class="brand-text">
           <h1>FREC Master Pro <span class="brand-badge">Florida Real Estate</span></h1>
-          <p>Simulador Oficial &amp; Guía de Memorización (200 Preguntas)</p>
+          <p>Simulador Oficial &amp; Guía de Memorización (300 Preguntas)</p>
         </div>
       </div>
 
@@ -54,7 +54,7 @@
       </button>
       <button class="nav-tab-btn" data-tab="guide">
         <span>📖 Guía de Preguntas &amp; Búsqueda</span>
-        <span class="badge">200 Q&amp;A</span>
+        <span class="badge">300 Q&amp;A</span>
       </button>
     </div>
   </nav>
@@ -85,8 +85,15 @@
           <label class="setup-option-card">
             <input type="radio" name="exam-count" value="200" style="position: absolute; opacity: 0;">
             <div class="card-icon">📚</div>
-            <h3>Maratón Completo (Las 200 Preguntas)</h3>
-            <p>Responde el banco íntegro de las 200 preguntas para una preparación exhaustiva.</p>
+            <h3>Maratón (200 Preguntas)</h3>
+            <p>200 preguntas aleatorias del banco completo de 300, para una preparación exhaustiva.</p>
+          </label>
+
+          <label class="setup-option-card">
+            <input type="radio" name="exam-count" value="300" style="position: absolute; opacity: 0;">
+            <div class="card-icon">🏆</div>
+            <h3>Banco Completo (300 Preguntas)</h3>
+            <p>Las 300 preguntas mezcladas al azar: las 200 originales + las 100 nuevas, cada una con su respuesta y explicación.</p>
           </label>
 
           <label class="setup-option-card">
@@ -101,6 +108,12 @@
             <div class="card-icon">⭐</div>
             <h3>Solo Mis Favoritos</h3>
             <p>Genera un examen personalizado solo con las preguntas que has marcado con estrella.</p>
+          </label>
+          <label class="setup-option-card">
+            <input type="radio" name="exam-count" value="new-section" style="position: absolute; opacity: 0;">
+            <div class="card-icon">🆕</div>
+            <h3>Nueva Sección (100 Preguntas Nuevas)</h3>
+            <p>Solo las 100 preguntas nuevas (201-300), sin mezclar con las 200 originales.</p>
           </label>
         </div>
 
@@ -118,7 +131,7 @@
           <div class="setting-item">
             <label for="exam-category-select">Filtrar por Tema:</label>
             <select id="exam-category-select" class="custom-select">
-              <option value="all">Todas las Categorías (200 Preguntas)</option>
+              <option value="all">Todas las Categorías (300 Preguntas)</option>
             </select>
           </div>
         </div>
@@ -250,7 +263,7 @@
         <div class="exam-header-bar">
           <div class="exam-meta-group">
             <span id="practice-question-category" class="category-tag">Corretaje</span>
-            <span id="practice-q-number-indicator" class="question-number-text">Pregunta 1 de 200</span>
+            <span id="practice-q-number-indicator" class="question-number-text">Pregunta 1 de 300</span>
           </div>
 
           <div class="exam-meta-group">
@@ -259,7 +272,7 @@
               <select id="practice-category-select" class="custom-select">
                 <option value="all">Todas las Categorías</option>
               </select>
-            </div>
+            </div><div class="setting-item"><label for="practice-section-select">Sección:</label><select id="practice-section-select" class="custom-select"><option value="all">Todas (300)</option><option value="original">Originales 1-200</option><option value="new">Nueva sección 201-300</option></select></div>
             <button id="practice-fav-btn" class="flag-btn">☆ Guardar</button>
           </div>
         </div>
@@ -297,7 +310,7 @@
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
           <div style="display: flex; align-items: center; gap: 0.75rem;">
             <span id="flashcard-category-tag" class="category-tag">Corretaje</span>
-            <span id="flashcard-counter" class="question-number-text">Tarjeta 1 de 200</span>
+            <span id="flashcard-counter" class="question-number-text">Tarjeta 1 de 300</span>
           </div>
 
           <div style="display: flex; align-items: center; gap: 0.5rem;">
@@ -305,7 +318,7 @@
               <option value="all">Todas las Categorías</option>
             </select>
             <button id="flashcard-fav-btn" class="icon-btn" title="Favorito">☆</button>
-          </div>
+          </div><div class="setting-item"><label for="flashcards-section-select">Sección:</label><select id="flashcards-section-select" class="custom-select"><option value="all">Todas (300)</option><option value="original">Originales 1-200</option><option value="new">Nueva sección 201-300</option></select></div>
         </div>
 
         <!-- 3D Card -->
@@ -355,11 +368,11 @@
             <button id="guide-toggle-answers-btn" class="btn-secondary">
               🙈 Ocultar Respuestas para Autoevaluación
             </button>
-          </div>
+          </div><div class="setting-item"><label for="guide-section-select">Sección:</label><select id="guide-section-select" class="custom-select"><option value="all">Todas (300)</option><option value="original">Originales 1-200</option><option value="new">Nueva sección 201-300</option></select></div>
         </div>
 
         <div style="margin-bottom: 1rem; font-size: 0.85rem; color: var(--text-secondary); display: flex; justify-content: space-between;">
-          <span id="guide-count-indicator">Mostrando 200 de 200 preguntas</span>
+          <span id="guide-count-indicator">Mostrando 300 de 300 preguntas</span>
           <span>Basado en el Banco de Preguntas FREC Sales Associate</span>
         </div>
 

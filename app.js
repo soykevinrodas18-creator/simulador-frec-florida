@@ -127,7 +127,8 @@
       shuffledOptions: {},
       selectedOption: null,
       hasSubmitted: false,
-      categoryFilter: 'all'
+      categoryFilter: 'all',
+      sectionFilter: 'all'
     },
 
     // Flashcards State
@@ -136,6 +137,7 @@
       currentIndex: 0,
       isFlipped: false,
       categoryFilter: 'all',
+      sectionFilter: 'all',
       mastered: new Set()
     },
 
@@ -143,6 +145,7 @@
     guide: {
       searchQuery: '',
       categoryFilter: 'all',
+      sectionFilter: 'all',
       hideAnswers: false
     }
   };
@@ -225,7 +228,7 @@
     selectors.forEach(id => {
       const el = document.getElementById(id);
       if (!el) return;
-      el.innerHTML = '<option value="all">Todas las Categorías (200 Preguntas)</option>';
+      el.innerHTML = `<option value="all">Todas las Categorías (${state.allQuestions.length} Preguntas)</option>`;
       state.categories.forEach(cat => {
         const count = state.allQuestions.filter(q => q.category === cat).length;
         const opt = document.createElement('option');
@@ -349,6 +352,11 @@
       initPracticeMode();
     });
 
+    document.getElementById('practice-section-select').addEventListener('change', (e) => {
+      state.practice.sectionFilter = e.target.value;
+      initPracticeMode();
+    });
+
     document.getElementById('practice-prev-btn').addEventListener('click', () => {
       if (state.practice.currentIndex > 0) {
         state.practice.currentIndex--;
@@ -422,6 +430,11 @@
       initFlashcards();
     });
 
+    document.getElementById('flashcards-section-select').addEventListener('change', (e) => {
+      state.flashcards.sectionFilter = e.target.value;
+      initFlashcards();
+    });
+
     // --- GUIDE SEARCH & FILTERS ---
     const searchInput = document.getElementById('guide-search-input');
     searchInput.addEventListener('input', (e) => {
@@ -431,6 +444,11 @@
 
     document.getElementById('guide-category-select').addEventListener('change', (e) => {
       state.guide.categoryFilter = e.target.value;
+      filterAndRenderGuide();
+    });
+
+    document.getElementById('guide-section-select').addEventListener('change', (e) => {
+      state.guide.sectionFilter = e.target.value;
       filterAndRenderGuide();
     });
 
@@ -531,6 +549,10 @@
       }
     }
 
+    if (qCountSetting === 'new-section') {
+      pool = pool.filter(q => q.id > 200);
+    }
+
     // Shuffle question pool
     pool = shuffle(pool);
 
@@ -539,6 +561,7 @@
     if (qCountSetting === '50') count = Math.min(50, pool.length);
     else if (qCountSetting === '100') count = Math.min(100, pool.length);
     else if (qCountSetting === '200') count = Math.min(200, pool.length);
+    else if (qCountSetting === '300') count = Math.min(300, pool.length);
 
     state.exam.questions = pool.slice(0, count);
     state.exam.currentIndex = 0;
@@ -842,6 +865,11 @@
     if (state.practice.categoryFilter !== 'all') {
       pool = pool.filter(q => q.category === state.practice.categoryFilter);
     }
+    if (state.practice.sectionFilter === 'original') {
+      pool = pool.filter(q => q.id <= 200);
+    } else if (state.practice.sectionFilter === 'new') {
+      pool = pool.filter(q => q.id > 200);
+    }
 
     state.practice.questions = pool;
     state.practice.currentIndex = 0;
@@ -956,6 +984,11 @@
     if (state.flashcards.categoryFilter !== 'all') {
       pool = pool.filter(q => q.category === state.flashcards.categoryFilter);
     }
+    if (state.flashcards.sectionFilter === 'original') {
+      pool = pool.filter(q => q.id <= 200);
+    } else if (state.flashcards.sectionFilter === 'new') {
+      pool = pool.filter(q => q.id > 200);
+    }
     state.flashcards.questions = pool;
     state.flashcards.currentIndex = 0;
     state.flashcards.isFlipped = false;
@@ -997,15 +1030,17 @@
   function filterAndRenderGuide() {
     const query = state.guide.searchQuery;
     const cat = state.guide.categoryFilter;
+    const sec = state.guide.sectionFilter;
 
     let filtered = state.allQuestions.filter(q => {
       const matchCat = cat === 'all' || q.category === cat;
+      const matchSec = sec === 'all' || (sec === 'original' && q.id <= 200) || (sec === 'new' && q.id > 200);
       const matchText = !query || 
         q.question.toLowerCase().includes(query) || 
         q.answer.toLowerCase().includes(query) || 
         q.explanation.toLowerCase().includes(query) ||
         q.id.toString() === query;
-      return matchCat && matchText;
+      return matchCat && matchSec && matchText;
     });
 
     const countIndicator = document.getElementById('guide-count-indicator');

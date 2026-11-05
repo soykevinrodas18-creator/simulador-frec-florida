@@ -1,4 +1,4 @@
-// Banco de 200 Preguntas FREC Sales Associate - Florida
+// Banco de 300 Preguntas FREC Sales Associate - Florida
 // Generado fielmente a partir de la Guía Oficial de Memorización FREC
 
 const QUESTIONS_DATA = [
@@ -2401,6 +2401,1206 @@ const QUESTIONS_DATA = [
       "una fianza en efectivo equivalente al 100% de las ventas proyectadas."
     ],
     "explanation": "Antes de lotificar y construir una subdivisión, el urbanizador debe someter el plano de subdivisión preliminar y final (plat map) para revisión y aprobación por la junta o comisión de planificación local."
+  },
+  {
+    "id": 201,
+    "category": "Contratos",
+    "question": "Un propietario le promete por escrito a un inquilino que, si recibe una oferta de un tercero para comprar la casa, primero se la ofrecerá al inquilino en las mismas condiciones. Este acuerdo se llama:",
+    "answer": "Derecho de primera negativa (right of first refusal)",
+    "distractors": [
+      "Opción de compra sin plazo",
+      "Contrato de listado abierto",
+      "Acuerdo de exclusividad de venta"
+    ],
+    "explanation": "El derecho de primera negativa obliga al propietario a ofrecer primero al titular en las mismas condiciones de la oferta de un tercero."
+  },
+  {
+    "id": 202,
+    "category": "Contratos",
+    "question": "Dos partes firman un contrato de compraventa y, antes del cierre, firman un documento que cambia solamente la fecha de cierre. Ese documento se llama:",
+    "answer": "Enmienda (amendment)",
+    "distractors": [
+      "Contrato nuevo sin relación con el anterior",
+      "Carta de intención sin efecto",
+      "Oferta original"
+    ],
+    "explanation": "Una enmienda modifica una parte del contrato original sin crear un contrato totalmente nuevo."
+  },
+  {
+    "id": 203,
+    "category": "Contratos",
+    "question": "Un comprador y un vendedor firman un contrato y luego firman un documento adicional que agrega una cláusula sobre los electrodomésticos incluidos. Ese documento adicional se llama:",
+    "answer": "Adenda (addendum)",
+    "distractors": [
+      "Contraoferta",
+      "Rescisión",
+      "Novación"
+    ],
+    "explanation": "Una adenda agrega términos al contrato original y forma parte de él."
+  },
+  {
+    "id": 204,
+    "category": "Contratos",
+    "question": "En un contrato de arrendamiento, el arrendatario transfiere todo su interés restante a otra persona y ya no queda obligado como inquilino principal. Esto se llama:",
+    "answer": "Cesión del arrendamiento (assignment)",
+    "distractors": [
+      "Desalojo voluntario",
+      "Renovación automática",
+      "Subarrendamiento (sublease)"
+    ],
+    "explanation": "En una cesión el arrendatario transfiere todo su interés restante y sale de su posición original en el arrendamiento."
+  },
+  {
+    "id": 205,
+    "category": "Contratos",
+    "question": "En un contrato de arrendamiento, el arrendatario le permite a otra persona usar la propiedad por una parte del plazo, pero el arrendatario original sigue siendo responsable ante el propietario. Esto se llama:",
+    "answer": "Subarrendamiento (sublease)",
+    "distractors": [
+      "Terminación por mutuo acuerdo",
+      "Venta del arrendamiento",
+      "Cesión total del arrendamiento"
+    ],
+    "explanation": "En un subarrendamiento el arrendatario original conserva su responsabilidad porque solo transfiere una parte de su interés."
+  },
+  {
+    "id": 206,
+    "category": "Contratos",
+    "question": "Un contrato en el que una parte ya cumplió todo y la otra todavía debe cumplir se clasifica como:",
+    "answer": "Contrato ejecutorio (executory contract)",
+    "distractors": [
+      "Contrato nulo",
+      "Contrato ejecutado (executed contract)",
+      "Contrato unilateral terminado"
+    ],
+    "explanation": "Un contrato ejecutorio todavía tiene obligaciones pendientes por cumplir de una o de ambas partes."
+  },
+  {
+    "id": 207,
+    "category": "Corretaje",
+    "question": "Un sales associate trabaja normalmente para su broker como:",
+    "answer": "Contratista independiente (independent contractor)",
+    "distractors": [
+      "Empleado con salario fijo del estado",
+      "Socio automático del brokerage",
+      "Funcionario público de la FREC"
+    ],
+    "explanation": "Un sales associate suele trabajar como contratista independiente y no como empleado asalariado del broker."
+  },
+  {
+    "id": 208,
+    "category": "Corretaje",
+    "question": "Un broker de Florida abre una segunda oficina en otra ciudad. Según la práctica de corretaje, esa oficina debe estar:",
+    "answer": "Bajo la supervisión del broker con licencia",
+    "distractors": [
+      "Registrada como una empresa totalmente independiente",
+      "Operada sin supervisión por un asistente sin licencia",
+      "Exenta de supervisión si solo hace publicidad"
+    ],
+    "explanation": "Toda oficina de un brokerage debe operar bajo la supervisión del broker con licencia."
+  },
+  {
+    "id": 209,
+    "category": "Corretaje",
+    "question": "Un vendedor le pide a su broker que no anuncie la casa en internet porque quiere una venta discreta. El broker debe:",
+    "answer": "Seguir la instrucción legal del cliente y ajustar la publicidad",
+    "distractors": [
+      "Cambiar el precio sin consultar al vendedor",
+      "Publicar la casa de todas formas para conseguir más ofertas",
+      "Cancelar el listado sin avisar al vendedor"
+    ],
+    "explanation": "El broker debe seguir las instrucciones legales de su cliente dentro del acuerdo de listado."
+  },
+  {
+    "id": 210,
+    "category": "Corretaje",
+    "question": "Un broker recibe una oferta por escrito para una propiedad listada. La obligación correcta del broker es:",
+    "answer": "Presentar la oferta al vendedor con prontitud",
+    "distractors": [
+      "Guardar la oferta hasta que llegue una mejor",
+      "Rechazarla si es menor que el precio de lista sin consultar",
+      "Negociar el precio sin avisar al vendedor"
+    ],
+    "explanation": "El broker debe presentar con prontitud al vendedor toda oferta recibida para la propiedad listada."
+  },
+  {
+    "id": 211,
+    "category": "Corretaje",
+    "question": "Un equipo de ventas (team) dentro de un brokerage anuncia una propiedad. El anuncio debe identificar claramente:",
+    "answer": "Al brokerage registrado",
+    "distractors": [
+      "Solamente al nombre personal del miembro del equipo",
+      "Solamente al número de teléfono del equipo",
+      "A la empresa de publicidad que hizo el anuncio"
+    ],
+    "explanation": "Toda publicidad de un equipo debe identificar claramente al brokerage registrado."
+  },
+  {
+    "id": 212,
+    "category": "Corretaje",
+    "question": "Un sales associate hace publicidad de una propiedad que ya se vendió, sin indicar que está vendida, para atraer llamadas. Esta práctica es:",
+    "answer": "Publicidad engañosa (bait advertising)",
+    "distractors": [
+      "Publicidad de equipo permitida",
+      "Publicidad comparativa permitida",
+      "Publicidad informativa sin problema"
+    ],
+    "explanation": "Anunciar una propiedad ya vendida como disponible para atraer clientes es publicidad engañosa."
+  },
+  {
+    "id": 213,
+    "category": "Descripciones Legales",
+    "question": "Un río cambia su curso poco a poco y deposita tierra nueva junto a una propiedad ribereña. Esa tierra nueva que se acumula se llama:",
+    "answer": "Aluvión (alluvion)",
+    "distractors": [
+      "Relicción por inundación repentina",
+      "Avulsión (avulsion)",
+      "Erosión por marejada"
+    ],
+    "explanation": "El aluvión es la tierra que se acumula poco a poco por la acción del agua junto a una propiedad ribereña."
+  },
+  {
+    "id": 214,
+    "category": "Descripciones Legales",
+    "question": "Un río cambia su curso de forma repentina por una inundación y deja una porción de tierra separada. Este cambio repentino se llama:",
+    "answer": "Avulsión (avulsion)",
+    "distractors": [
+      "Accesión por siembra",
+      "Aluvión (alluvion)",
+      "Abandono por prescripción"
+    ],
+    "explanation": "La avulsión es un cambio repentino en el curso del agua, distinto de la acumulación lenta del aluvión."
+  },
+  {
+    "id": 215,
+    "category": "Descripciones Legales",
+    "question": "Un propietario tiene derechos sobre el agua de un río que pasa junto a su terreno. Estos derechos se llaman:",
+    "answer": "Derechos ribereños (riparian rights)",
+    "distractors": [
+      "Derechos aéreos",
+      "Derechos minerales",
+      "Derechos litorales (littoral rights)"
+    ],
+    "explanation": "Los derechos ribereños corresponden al propietario de un terreno junto a un río o arroyo."
+  },
+  {
+    "id": 216,
+    "category": "Descripciones Legales",
+    "question": "Un propietario tiene derechos sobre el agua de un lago que bordea su terreno. Estos derechos se llaman:",
+    "answer": "Derechos litorales (littoral rights)",
+    "distractors": [
+      "Derechos de subsuelo",
+      "Derechos de superficie",
+      "Derechos ribereños (riparian rights)"
+    ],
+    "explanation": "Los derechos litorales corresponden al propietario de un terreno junto a un lago o al mar."
+  },
+  {
+    "id": 217,
+    "category": "Descripciones Legales",
+    "question": "En el sistema de agrimensura gubernamental, un township mide normalmente:",
+    "answer": "6 millas por 6 millas",
+    "distractors": [
+      "10 millas por 10 millas",
+      "36 millas por 36 millas",
+      "1 milla por 1 milla"
+    ],
+    "explanation": "Un township mide normalmente 6 millas por cada lado y contiene 36 secciones."
+  },
+  {
+    "id": 218,
+    "category": "El Negocio",
+    "question": "El mercado inmobiliario se considera local porque:",
+    "answer": "Los precios y la demanda dependen de la ubicación y de las condiciones de cada zona",
+    "distractors": [
+      "Todas las casas del país tienen el mismo precio",
+      "La oferta de tierra es ilimitada en cada ciudad",
+      "Las propiedades se pueden mover de una ciudad a otra"
+    ],
+    "explanation": "El mercado inmobiliario es local porque el valor depende de la ubicación y de las condiciones propias de cada zona."
+  },
+  {
+    "id": 219,
+    "category": "El Negocio",
+    "question": "Una característica del ciclo inmobiliario es que pasa por fases de recuperación, expansión, exceso de oferta y recesión. Esto significa que el ciclo es:",
+    "answer": "Cíclico y se repite en el tiempo",
+    "distractors": [
+      "Siempre ascendente sin caídas",
+      "Idéntico en todas las ciudades al mismo tiempo",
+      "Independiente de la oferta y la demanda"
+    ],
+    "explanation": "El ciclo inmobiliario es cíclico porque alterna fases de recuperación, expansión, exceso de oferta y recesión."
+  },
+  {
+    "id": 220,
+    "category": "El Negocio",
+    "question": "Un brokerage que se especializa solo en propiedades comerciales, en lugar de atender todo tipo de propiedad, está usando:",
+    "answer": "Especialización por nicho de mercado",
+    "distractors": [
+      "Práctica de listado abierto",
+      "Corretaje sin licencia",
+      "Publicidad engañosa"
+    ],
+    "explanation": "La especialización por nicho permite a un brokerage enfocarse en un tipo de propiedad o de cliente."
+  },
+  {
+    "id": 221,
+    "category": "El Negocio",
+    "question": "Cuando un broker contrata a un sales associate como contratista independiente, el broker normalmente NO:",
+    "answer": "Retiene impuestos sobre la renta de sus comisiones como si fuera empleado",
+    "distractors": [
+      "Le permite usar el nombre del brokerage en su publicidad",
+      "Exige que trabaje bajo su licencia",
+      "Supervisa su actividad con licencia"
+    ],
+    "explanation": "Como contratista independiente, el sales associate no recibe retención de impuestos sobre la renta como un empleado."
+  },
+  {
+    "id": 222,
+    "category": "El Negocio",
+    "question": "La prospección (prospecting) en el negocio inmobiliario sirve principalmente para:",
+    "answer": "Crear una fuente constante de clientes futuros",
+    "distractors": [
+      "Evitar la publicidad del brokerage",
+      "Sustituir el contrato de compraventa",
+      "Cerrar una venta sin listado"
+    ],
+    "explanation": "La prospección crea una fuente constante de clientes futuros para el negocio inmobiliario."
+  },
+  {
+    "id": 223,
+    "category": "FREC y DBPR",
+    "question": "La Florida Real Estate Commission (FREC) funciona dentro de:",
+    "answer": "El Department of Business and Professional Regulation (DBPR)",
+    "distractors": [
+      "El Departamento de Educación federal",
+      "La Asociación Nacional de Realtors",
+      "La Corte Suprema de Florida"
+    ],
+    "explanation": "La FREC funciona dentro del DBPR, que supervisa las profesiones reguladas en Florida."
+  },
+  {
+    "id": 224,
+    "category": "FREC y DBPR",
+    "question": "Cuando se presenta una queja contra un titular de licencia, el proceso normal en Florida es que:",
+    "answer": "El DBPR investiga y la FREC decide la medida disciplinaria",
+    "distractors": [
+      "La FREC investiga sin participación del DBPR",
+      "El comprador impone la multa",
+      "El vendedor decide la sanción"
+    ],
+    "explanation": "En Florida el DBPR investiga las quejas y la FREC decide la medida disciplinaria correspondiente."
+  },
+  {
+    "id": 225,
+    "category": "FREC y DBPR",
+    "question": "Una función de la FREC es:",
+    "answer": "Adoptar reglas para la práctica de bienes raíces en Florida",
+    "distractors": [
+      "Cobrar impuestos sobre la propiedad",
+      "Emitir préstamos hipotecarios",
+      "Fijar los precios de venta de las casas"
+    ],
+    "explanation": "La FREC puede adoptar reglas que regulan la práctica de bienes raíces en Florida."
+  },
+  {
+    "id": 226,
+    "category": "FREC y DBPR",
+    "question": "El DBPR mantiene, entre otras cosas:",
+    "answer": "Los registros de licencias de los titulares en Florida",
+    "distractors": [
+      "Las tasaciones de cada propiedad",
+      "Los precios de lista de todas las casas",
+      "Los contratos de compraventa privados"
+    ],
+    "explanation": "El DBPR mantiene los registros de licencias de los profesionales regulados en Florida."
+  },
+  {
+    "id": 227,
+    "category": "FREC y DBPR",
+    "question": "Si un titular de licencia no renueva a tiempo y su licencia queda inactiva, para volver a practicar debe:",
+    "answer": "Cumplir los requisitos de reactivación del DBPR y la FREC",
+    "distractors": [
+      "Simplemente anunciar una propiedad",
+      "Trabajar sin licencia hasta la próxima renovación",
+      "Pedirle al comprador que lo reactive"
+    ],
+    "explanation": "Una licencia inactiva solo vuelve a estar activa cuando se cumplen los requisitos de reactivación aplicables."
+  },
+  {
+    "id": 228,
+    "category": "Financiamiento",
+    "question": "El mercado hipotecario primario es el mercado donde:",
+    "answer": "Se originan los préstamos entre prestamistas y prestatarios",
+    "distractors": [
+      "Solo se venden propiedades en ejecución hipotecaria",
+      "Se venden préstamos ya existentes a inversionistas",
+      "El gobierno garantiza todos los préstamos"
+    ],
+    "explanation": "En el mercado hipotecario primario se originan los préstamos entre prestamistas y prestatarios."
+  },
+  {
+    "id": 229,
+    "category": "Financiamiento",
+    "question": "Un préstamo FHA exige normalmente un pago inicial mínimo de:",
+    "answer": "3.5% del precio de compra",
+    "distractors": [
+      "0% del precio de compra",
+      "20% del precio de compra",
+      "10% del precio de compra"
+    ],
+    "explanation": "Un préstamo FHA exige normalmente un pago inicial mínimo de 3.5% del precio de compra."
+  },
+  {
+    "id": 230,
+    "category": "Financiamiento",
+    "question": "Un préstamo VA se distingue porque el veterano elegible normalmente:",
+    "answer": "No paga seguro hipotecario privado mensual (PMI)",
+    "distractors": [
+      "Debe pagar seguro hipotecario privado siempre",
+      "No puede usar el préstamo para una vivienda principal",
+      "Debe pagar 20% de pago inicial"
+    ],
+    "explanation": "Un préstamo VA no exige seguro hipotecario privado mensual para el veterano elegible."
+  },
+  {
+    "id": 231,
+    "category": "Financiamiento",
+    "question": "Un punto de descuento (discount point) equivale a:",
+    "answer": "1% del monto del préstamo",
+    "distractors": [
+      "1 mes de pago de intereses",
+      "1% del precio de lista",
+      "10% del pago inicial"
+    ],
+    "explanation": "Un punto de descuento equivale a 1% del monto del préstamo y se paga para reducir la tasa de interés."
+  },
+  {
+    "id": 232,
+    "category": "Financiamiento",
+    "question": "Un comprador paga 2 puntos de descuento en un préstamo de $200,000. El costo de esos puntos es:",
+    "answer": "$4,000",
+    "distractors": [
+      "$400",
+      "$2,000",
+      "$20,000"
+    ],
+    "explanation": "Dos puntos sobre $200,000 equivalen a 2% de $200,000, es decir, $4,000."
+  },
+  {
+    "id": 233,
+    "category": "Financiamiento",
+    "question": "El pago PITI de un préstamo hipotecario incluye:",
+    "answer": "Capital, intereses, impuestos y seguro (principal, interest, taxes, insurance)",
+    "distractors": [
+      "Solo capital e intereses",
+      "Comisión, intereses, impuestos y seguro",
+      "Solo impuestos y seguro"
+    ],
+    "explanation": "El pago PITI incluye capital, intereses, impuestos sobre la propiedad y seguro."
+  },
+  {
+    "id": 234,
+    "category": "Hipotecas",
+    "question": "Un préstamo garantizado por una segunda hipoteca sobre una propiedad que ya tiene una primera hipoteca se llama:",
+    "answer": "Préstamo junior (junior lien)",
+    "distractors": [
+      "Préstamo del mercado secundario",
+      "Préstamo de primer grado",
+      "Préstamo sin garantía"
+    ],
+    "explanation": "Un préstamo junior está garantizado por un gravamen posterior a la primera hipoteca."
+  },
+  {
+    "id": 235,
+    "category": "Hipotecas",
+    "question": "Una hipoteca inversa (reverse mortgage) está diseñada principalmente para:",
+    "answer": "Propietarios mayores que quieren convertir el valor de su casa en pagos sin pago mensual obligatorio",
+    "distractors": [
+      "Inversionistas que compran varias casas a la vez",
+      "Compradores primerizos sin pago inicial",
+      "Propietarios que quieren refinanciar a una tasa fija"
+    ],
+    "explanation": "Una hipoteca inversa permite a un propietario mayor convertir el valor acumulado de su casa en fondos sin un pago mensual obligatorio de capital e intereses."
+  },
+  {
+    "id": 236,
+    "category": "Hipotecas",
+    "question": "En un préstamo con garantía de la casa (home equity loan), el prestamista normalmente considera:",
+    "answer": "El valor acumulado (equity) que ya tiene el propietario",
+    "distractors": [
+      "El precio original sin importar el saldo del préstamo",
+      "La edad del propietario como único requisito",
+      "Solo el ingreso del propietario sin mirar la propiedad"
+    ],
+    "explanation": "Un préstamo con garantía de la casa se basa en el valor acumulado que el propietario ya tiene en la propiedad."
+  },
+  {
+    "id": 237,
+    "category": "Hipotecas",
+    "question": "Una hipoteca de tipo envolvente (wraparound mortgage) se caracteriza porque:",
+    "answer": "El vendedor mantiene su préstamo original y el comprador le paga al vendedor, quien sigue pagando su préstamo",
+    "distractors": [
+      "El comprador cancela el préstamo del vendedor en el cierre",
+      "No existe ningún préstamo anterior sobre la propiedad",
+      "El gobierno garantiza todo el préstamo"
+    ],
+    "explanation": "En una hipoteca envolvente el vendedor mantiene su préstamo original y recibe los pagos del comprador mientras sigue pagando su propio préstamo."
+  },
+  {
+    "id": 238,
+    "category": "Hipotecas",
+    "question": "Un contrato de compra a plazos en el que el vendedor conserva el título hasta que el comprador pague todo se llama:",
+    "answer": "Contrato de compraventa a plazos (land contract o contract for deed)",
+    "distractors": [
+      "Arrendamiento con opción sin título",
+      "Hipoteca de tasa fija",
+      "Préstamo VA"
+    ],
+    "explanation": "En un contrato de compraventa a plazos el vendedor conserva el título hasta que el comprador complete todos los pagos."
+  },
+  {
+    "id": 239,
+    "category": "Impuestos",
+    "question": "La exención homestead de Florida tiene, en general, un primer tramo de $25,000 que aplica a:",
+    "answer": "Todos los impuestos sobre la propiedad, incluyendo los de las escuelas",
+    "distractors": [
+      "Solamente al impuesto sobre la renta",
+      "Solamente a los impuestos federales",
+      "Solamente a los impuestos de las escuelas"
+    ],
+    "explanation": "El primer tramo de $25,000 de la exención homestead aplica a todos los impuestos sobre la propiedad, incluyendo los de las escuelas."
+  },
+  {
+    "id": 240,
+    "category": "Impuestos",
+    "question": "Una propiedad en Florida tiene un valor de mercado (just value) de $200,000 y una tasa impositiva (millage) de 10 mills. El impuesto ad valorem, sin exenciones, es:",
+    "answer": "$2,000",
+    "distractors": [
+      "$20,000",
+      "$10,000",
+      "$200"
+    ],
+    "explanation": "Diez mills equivalen a $10 por cada $1,000 de valor, así que $200,000 por 10 entre 1,000 da $2,000."
+  },
+  {
+    "id": 241,
+    "category": "Impuestos",
+    "question": "Un impuesto especial (special assessment) se diferencia de un impuesto ad valorem porque:",
+    "answer": "Se cobra por una mejora pública específica que beneficia a ciertas propiedades",
+    "distractors": [
+      "Se basa solamente en el valor total de la propiedad",
+      "Nunca se convierte en gravamen sobre la propiedad",
+      "Se cobra a todas las propiedades del condado por igual"
+    ],
+    "explanation": "Un impuesto especial se cobra por una mejora pública específica que beneficia directamente a ciertas propiedades."
+  },
+  {
+    "id": 242,
+    "category": "Impuestos",
+    "question": "Cuando una propiedad se vende, el impuesto sobre la ganancia de capital se calcula, en general, sobre:",
+    "answer": "La diferencia entre el precio de venta y la base ajustada",
+    "distractors": [
+      "El monto del préstamo hipotecario",
+      "El precio de lista original sin ajustes",
+      "El valor de la tasación solamente"
+    ],
+    "explanation": "La ganancia de capital se calcula sobre la diferencia entre el precio de venta y la base ajustada de la propiedad."
+  },
+  {
+    "id": 243,
+    "category": "Impuestos",
+    "question": "Para depreciación fiscal, una propiedad residencial de alquiler se deprecia normalmente en línea recta durante:",
+    "answer": "27.5 años",
+    "distractors": [
+      "39 años",
+      "15 años",
+      "5 años"
+    ],
+    "explanation": "Una propiedad residencial de alquiler se deprecia normalmente en línea recta durante 27.5 años."
+  },
+  {
+    "id": 244,
+    "category": "Inversiones",
+    "question": "Un inversionista compra una propiedad con un pago inicial pequeño y un préstamo grande para controlar una propiedad de mayor valor. Esto es un ejemplo de:",
+    "answer": "Apalancamiento (leverage)",
+    "distractors": [
+      "Intercambio sin impuestos",
+      "Depreciación acelerada",
+      "Diversificación sin riesgo"
+    ],
+    "explanation": "El apalancamiento usa fondos prestados para controlar una propiedad de mayor valor con una inversión inicial menor."
+  },
+  {
+    "id": 245,
+    "category": "Inversiones",
+    "question": "El multiplicador de renta bruta (gross rent multiplier, GRM) se calcula como:",
+    "answer": "Precio de venta dividido entre la renta bruta anual",
+    "distractors": [
+      "Precio de venta multiplicado por la renta mensual",
+      "Ingreso neto dividido entre el precio de venta",
+      "Renta bruta anual dividida entre el precio de venta"
+    ],
+    "explanation": "El multiplicador de renta bruta se calcula dividiendo el precio de venta entre la renta bruta anual."
+  },
+  {
+    "id": 246,
+    "category": "Inversiones",
+    "question": "Una propiedad se vende en $300,000 y genera $30,000 de renta bruta anual. Su multiplicador de renta bruta (GRM) es:",
+    "answer": "10",
+    "distractors": [
+      "30",
+      "100",
+      "3"
+    ],
+    "explanation": "El GRM es $300,000 dividido entre $30,000, es decir, 10."
+  },
+  {
+    "id": 247,
+    "category": "Inversiones",
+    "question": "El ingreso bruto efectivo (effective gross income) se calcula como:",
+    "answer": "Ingreso bruto potencial menos pérdidas por vacantes y por falta de cobro, más otros ingresos",
+    "distractors": [
+      "Precio de venta menos el préstamo",
+      "Ingreso neto más gastos de operación",
+      "Renta mensual multiplicada por 12 sin ajustes"
+    ],
+    "explanation": "El ingreso bruto efectivo es el ingreso bruto potencial menos vacantes y falta de cobro, más otros ingresos."
+  },
+  {
+    "id": 248,
+    "category": "Inversiones",
+    "question": "El rendimiento en efectivo (cash-on-cash return) se calcula como:",
+    "answer": "Flujo de efectivo anual antes de impuestos dividido entre el efectivo inicial invertido",
+    "distractors": [
+      "Precio de venta dividido entre la renta bruta",
+      "Ingreso neto dividido entre el valor total de la propiedad",
+      "Renta mensual multiplicada por 12"
+    ],
+    "explanation": "El rendimiento en efectivo es el flujo de efectivo anual antes de impuestos dividido entre el efectivo inicial invertido."
+  },
+  {
+    "id": 249,
+    "category": "Leyes Federales/Estatales",
+    "question": "Una casa construida antes de 1978 se pone a la venta. El vendedor debe entregar al comprador:",
+    "answer": "La divulgación sobre pintura a base de plomo y el folleto informativo",
+    "distractors": [
+      "El contrato de arrendamiento anterior",
+      "Una garantía de que no hay plomo en ninguna parte",
+      "Solamente el historial de impuestos"
+    ],
+    "explanation": "Para viviendas construidas antes de 1978 se debe entregar la divulgación sobre pintura a base de plomo y el folleto informativo."
+  },
+  {
+    "id": 250,
+    "category": "Leyes Federales/Estatales",
+    "question": "Bajo la Ley de Veracidad en los Préstamos (Truth in Lending), un prestatario que refinancia su vivienda principal normalmente tiene:",
+    "answer": "Derecho de rescisión de 3 días hábiles",
+    "distractors": [
+      "Derecho a cancelar en cualquier momento sin límite",
+      "Ningún derecho de rescisión",
+      "Derecho de rescisión de 30 días"
+    ],
+    "explanation": "En un refinanciamiento de vivienda principal, el prestatario normalmente tiene 3 días hábiles para rescindir."
+  },
+  {
+    "id": 251,
+    "category": "Leyes Federales/Estatales",
+    "question": "La Ley de Igualdad de Oportunidades de Crédito (Equal Credit Opportunity Act, ECOA) prohíbe:",
+    "answer": "Negar crédito por raza, color, religión, origen nacional, sexo, estado civil o edad",
+    "distractors": [
+      "Cobrar intereses sobre un préstamo",
+      "Exigir un pago inicial",
+      "Pedir prueba de ingreso al solicitante"
+    ],
+    "explanation": "La ECOA prohíbe negar crédito por características protegidas como raza, color, religión, origen nacional, sexo, estado civil o edad."
+  },
+  {
+    "id": 252,
+    "category": "Leyes Federales/Estatales",
+    "question": "En Florida, un arrendador que quiere desalojar por falta de pago debe entregar normalmente:",
+    "answer": "Un aviso de 3 días para pagar o desocupar",
+    "distractors": [
+      "Un aviso verbal el mismo día",
+      "Un aviso de 30 días para pagar o desocupar",
+      "Ningún aviso antes de desalojar"
+    ],
+    "explanation": "En Florida el desalojo por falta de pago normalmente comienza con un aviso de 3 días para pagar o desocupar."
+  },
+  {
+    "id": 253,
+    "category": "Leyes Federales/Estatales",
+    "question": "Bajo la Ley de Vivienda Justa, una organización religiosa que vende viviendas de su propiedad puede, en ciertos casos:",
+    "answer": "Dar preferencia a personas de su misma religión",
+    "distractors": [
+      "Cobrar un precio distinto por religión en todos los casos",
+      "Negarse a vender a cualquier grupo protegido sin excepción",
+      "Anunciar que solo vende a una raza específica"
+    ],
+    "explanation": "En ciertos casos una organización religiosa puede dar preferencia a personas de su misma religión en viviendas de su propiedad."
+  },
+  {
+    "id": 254,
+    "category": "Licencias",
+    "question": "Un sales associate de Florida quiere trabajar para dos brokers al mismo tiempo. La regla general es que:",
+    "answer": "Solo puede trabajar bajo un broker empleador a la vez",
+    "distractors": [
+      "No necesita broker empleador si tiene experiencia",
+      "Puede trabajar para varios brokers sin registrarse",
+      "Puede trabajar para cualquier broker sin aviso"
+    ],
+    "explanation": "Un sales associate solo puede trabajar bajo un broker empleador a la vez."
+  },
+  {
+    "id": 255,
+    "category": "Licencias",
+    "question": "Si un broker fallece o queda incapacitado, su brokerage normalmente debe:",
+    "answer": "Seguir los procedimientos del DBPR para la continuidad o cierre de la oficina",
+    "distractors": [
+      "Transferir las licencias a los clientes",
+      "Cerrar sin notificar a nadie",
+      "Seguir operando sin supervisión"
+    ],
+    "explanation": "Tras el fallecimiento o incapacidad de un broker, la oficina debe seguir los procedimientos del DBPR para su continuidad o cierre."
+  },
+  {
+    "id": 256,
+    "category": "Licencias",
+    "question": "Una persona que vende su propia casa, sin cobrar comisión a otra persona y sin actuar como agente de otros, en general:",
+    "answer": "No necesita licencia de bienes raíces para esa venta propia",
+    "distractors": [
+      "Debe contratar a un broker aunque no quiera",
+      "Necesita licencia solo si la casa vale más de $100,000",
+      "Necesita licencia de broker aunque sea su propia casa"
+    ],
+    "explanation": "Una persona que vende su propia propiedad, sin actuar para otros, en general no necesita licencia de bienes raíces."
+  },
+  {
+    "id": 257,
+    "category": "Licencias",
+    "question": "Un sales associate se muda a otra ciudad pero sigue trabajando para el mismo broker. Sobre su dirección personal en su registro, lo correcto es:",
+    "answer": "Mantenerla actualizada ante el DBPR",
+    "distractors": [
+      "Dejarla como estaba porque no cambió de broker",
+      "Borrarla del registro hasta la renovación",
+      "Actualizarla solo si cambia de brokerage"
+    ],
+    "explanation": "El titular de licencia debe mantener su dirección personal actualizada en su registro ante el DBPR."
+  },
+  {
+    "id": 258,
+    "category": "Licencias",
+    "question": "Un broker associate se diferencia de un sales associate porque el broker associate:",
+    "answer": "Ya completó los requisitos de educación y examen de broker, pero trabaja bajo otro broker",
+    "distractors": [
+      "Es el dueño automático del brokerage",
+      "No tiene licencia",
+      "No puede trabajar bajo ningún broker"
+    ],
+    "explanation": "Un broker associate ya cumplió los requisitos de broker, pero elige trabajar bajo otro broker."
+  },
+  {
+    "id": 259,
+    "category": "Matemáticas y Cierre",
+    "question": "Una casa se vende en $400,000 con una comisión total de 5%. La comisión total es:",
+    "answer": "$20,000",
+    "distractors": [
+      "$25,000",
+      "$40,000",
+      "$2,000"
+    ],
+    "explanation": "El 5% de $400,000 es $20,000 de comisión total."
+  },
+  {
+    "id": 260,
+    "category": "Matemáticas y Cierre",
+    "question": "Una propiedad genera un ingreso operativo neto (NOI) de $24,000 al año y se vende en $300,000. Su tasa de capitalización (cap rate) es:",
+    "answer": "8%",
+    "distractors": [
+      "4%",
+      "24%",
+      "12%"
+    ],
+    "explanation": "La tasa de capitalización es $24,000 dividido entre $300,000, es decir, 8%."
+  },
+  {
+    "id": 261,
+    "category": "Matemáticas y Cierre",
+    "question": "Una propiedad tiene un valor de $250,000 y un préstamo de $200,000. El valor acumulado (equity) del propietario es:",
+    "answer": "$50,000",
+    "distractors": [
+      "$200,000",
+      "$450,000",
+      "$25,000"
+    ],
+    "explanation": "El valor acumulado es el valor de la propiedad menos el saldo del préstamo, es decir, $250,000 menos $200,000."
+  },
+  {
+    "id": 262,
+    "category": "Matemáticas y Cierre",
+    "question": "Una casa comprada en $200,000 se vende años después en $240,000. La apreciación en porcentaje es:",
+    "answer": "20%",
+    "distractors": [
+      "2%",
+      "10%",
+      "40%"
+    ],
+    "explanation": "La apreciación es $40,000 sobre $200,000, es decir, 20%."
+  },
+  {
+    "id": 263,
+    "category": "Matemáticas y Cierre",
+    "question": "Un mercado tiene 60 casas en venta y se venden en promedio 10 casas por mes. Los meses de inventario son:",
+    "answer": "6 meses",
+    "distractors": [
+      "60 meses",
+      "10 meses",
+      "0.6 meses"
+    ],
+    "explanation": "Los meses de inventario son 60 casas en venta divididas entre 10 ventas por mes, es decir, 6 meses."
+  },
+  {
+    "id": 264,
+    "category": "Matemáticas y Cierre",
+    "question": "Una propiedad residencial de alquiler tiene una base depreciable de $275,000. La depreciación anual en línea recta, usando 27.5 años, es:",
+    "answer": "$10,000",
+    "distractors": [
+      "$2,750",
+      "$27,500",
+      "$5,000"
+    ],
+    "explanation": "La depreciación anual en línea recta es $275,000 dividido entre 27.5 años, es decir, $10,000 por año."
+  },
+  {
+    "id": 265,
+    "category": "Mercados",
+    "question": "Cuando hay muchas casas en venta y pocos compradores, el mercado se llama:",
+    "answer": "Mercado de compradores (buyer's market)",
+    "distractors": [
+      "Mercado equilibrado",
+      "Mercado sin oferta",
+      "Mercado de vendedores (seller's market)"
+    ],
+    "explanation": "Un mercado de compradores ocurre cuando la oferta supera a la demanda y los compradores tienen más opciones."
+  },
+  {
+    "id": 266,
+    "category": "Mercados",
+    "question": "Cuando hay pocos casas en venta y muchos compradores compitiendo, el mercado se llama:",
+    "answer": "Mercado de vendedores (seller's market)",
+    "distractors": [
+      "Mercado equilibrado",
+      "Mercado sin demanda",
+      "Mercado de compradores (buyer's market)"
+    ],
+    "explanation": "Un mercado de vendedores ocurre cuando la demanda supera a la oferta y los vendedores tienen más ventaja."
+  },
+  {
+    "id": 267,
+    "category": "Mercados",
+    "question": "La tasa de absorción (absorption rate) mide:",
+    "answer": "Qué tan rápido se venden las propiedades disponibles en un mercado",
+    "distractors": [
+      "El impuesto anual de una propiedad",
+      "El precio promedio de todas las casas del país",
+      "La tasa de interés de un préstamo"
+    ],
+    "explanation": "La tasa de absorción mide qué tan rápido se venden las propiedades disponibles en un mercado."
+  },
+  {
+    "id": 268,
+    "category": "Mercados",
+    "question": "Si las tasas de interés hipotecario suben de forma importante, la demanda de vivienda normalmente:",
+    "answer": "Baja, porque comprar se vuelve más caro",
+    "distractors": [
+      "Sube siempre sin excepción",
+      "No cambia nunca",
+      "Baja solo si suben los impuestos"
+    ],
+    "explanation": "Cuando las tasas de interés suben, comprar se vuelve más caro y la demanda de vivienda normalmente baja."
+  },
+  {
+    "id": 269,
+    "category": "Mercados",
+    "question": "Un aumento en la construcción de casas nuevas, si la demanda no cambia, normalmente:",
+    "answer": "Aumenta la oferta y presiona los precios a la baja",
+    "distractors": [
+      "No afecta al mercado",
+      "Reduce la oferta de inmediato",
+      "Aumenta la demanda de forma automática"
+    ],
+    "explanation": "Un aumento en la construcción aumenta la oferta y, si la demanda no cambia, presiona los precios a la baja."
+  },
+  {
+    "id": 270,
+    "category": "Propiedad",
+    "question": "El derecho de un propietario a usar su propiedad sin interferencia de otros, dentro de la ley, se llama:",
+    "answer": "Derecho de disfrute (enjoyment)",
+    "distractors": [
+      "Derecho de hipoteca",
+      "Derecho de expropiación",
+      "Derecho de exclusión solamente"
+    ],
+    "explanation": "El derecho de disfrute permite al propietario usar su propiedad dentro de la ley sin interferencia indebida."
+  },
+  {
+    "id": 271,
+    "category": "Propiedad",
+    "question": "Cuando un propietario vende solo los derechos minerales de su terreno y conserva la superficie, está haciendo:",
+    "answer": "Una separación de derechos (severance)",
+    "distractors": [
+      "Una donación del título completo",
+      "Una expropiación",
+      "Un arrendamiento residencial"
+    ],
+    "explanation": "La separación de derechos divide los derechos sobre la superficie y los derechos sobre el subsuelo."
+  },
+  {
+    "id": 272,
+    "category": "Propiedad",
+    "question": "Una persona ocupa una propiedad ajena de forma abierta, continua, exclusiva y hostil durante el tiempo exigido por la ley, sin permiso del dueño. Esto puede dar lugar a:",
+    "answer": "Posesión adversa (adverse possession)",
+    "distractors": [
+      "Arrendamiento por años",
+      "Expropiación voluntaria",
+      "Servidumbre por necesidad"
+    ],
+    "explanation": "La posesión adversa requiere ocupación abierta, continua, exclusiva y hostil durante el tiempo exigido por la ley."
+  },
+  {
+    "id": 273,
+    "category": "Propiedad",
+    "question": "Un vecino cruza todos los días el terreno de otro para llegar a la carretera, sin permiso y durante muchos años. Con el tiempo puede reclamar:",
+    "answer": "Una servidumbre por prescripción (easement by prescription)",
+    "distractors": [
+      "Una exención de impuestos",
+      "Un arrendamiento comercial",
+      "El título completo de la propiedad"
+    ],
+    "explanation": "Una servidumbre por prescripción puede surgir por el uso continuo y sin permiso durante el tiempo exigido por la ley."
+  },
+  {
+    "id": 274,
+    "category": "Propiedad",
+    "question": "Una propiedad que no tiene acceso a una vía pública puede reclamar, normalmente, una servidumbre de:",
+    "answer": "Necesidad (easement by necessity)",
+    "distractors": [
+      "Prescripción comercial",
+      "Uso recreativo",
+      "Expropiación"
+    ],
+    "explanation": "Una propiedad sin acceso a una vía pública puede reclamar una servidumbre por necesidad para llegar a ella."
+  },
+  {
+    "id": 275,
+    "category": "Propiedad",
+    "question": "Un condominio se diferencia de una casa unifamiliar en que el dueño del condominio tiene:",
+    "answer": "Título individual de su unidad más un interés compartido en las áreas comunes",
+    "distractors": [
+      "Título de todo el edificio",
+      "Ningún título sobre su unidad",
+      "Título solamente de las áreas comunes"
+    ],
+    "explanation": "El dueño de un condominio tiene título individual de su unidad y un interés compartido en las áreas comunes."
+  },
+  {
+    "id": 276,
+    "category": "Relaciones",
+    "question": "Un licensee que quiere comprar para sí mismo una propiedad que tiene listada debe, en general:",
+    "answer": "Divulgar por escrito que actúa como principal y que tiene licencia",
+    "distractors": [
+      "Ocultar que tiene licencia para negociar mejor",
+      "Comprar sin avisar al vendedor que es licensee",
+      "Cancelar el listado sin explicación"
+    ],
+    "explanation": "Un licensee que compra como principal debe divulgar por escrito su condición de titular de licencia y su interés personal."
+  },
+  {
+    "id": 277,
+    "category": "Relaciones",
+    "question": "Un single agent en Florida debe guardar confidencialidad sobre:",
+    "answer": "La información confidencial de su cliente",
+    "distractors": [
+      "El precio de lista publicado",
+      "La dirección de la propiedad",
+      "Los hechos materiales de la propiedad"
+    ],
+    "explanation": "Un single agent debe guardar confidencialidad sobre la información confidencial de su cliente."
+  },
+  {
+    "id": 278,
+    "category": "Relaciones",
+    "question": "Antes de que un comprador o vendedor acepte una relación de corretaje en Florida, el licensee debe entregarle:",
+    "answer": "La divulgación de la relación de corretaje (brokerage relationship disclosure)",
+    "distractors": [
+      "El título de la propiedad",
+      "La tasación final",
+      "El contrato de préstamo"
+    ],
+    "explanation": "Antes de aceptar una relación de corretaje, el licensee debe entregar la divulgación de la relación de corretaje."
+  },
+  {
+    "id": 279,
+    "category": "Relaciones",
+    "question": "Un licensee que actúa como transaction broker NO debe:",
+    "answer": "Revelar el precio mínimo que aceptaría el vendedor ni el máximo que pagaría el comprador",
+    "distractors": [
+      "Presentar ofertas con prontitud",
+      "Mantener registros de la transacción",
+      "Ayudar con los formularios de la transacción"
+    ],
+    "explanation": "Un transaction broker no debe revelar el precio mínimo del vendedor ni el máximo del comprador."
+  },
+  {
+    "id": 280,
+    "category": "Relaciones",
+    "question": "Un acto ministerial de un transaction broker es, por ejemplo:",
+    "answer": "Entregar documentos y ayudar con trámites sin dar consejo de negociación",
+    "distractors": [
+      "Negociar en nombre de ambas partes como agente único",
+      "Ocultar un defecto material conocido",
+      "Decidir el precio de oferta del comprador"
+    ],
+    "explanation": "Un acto ministerial es ayuda con trámites y documentos, sin dar consejo de negociación como agente único."
+  },
+  {
+    "id": 281,
+    "category": "Títulos y Escrituras",
+    "question": "Una escritura que no ofrece ninguna garantía sobre el título, solo transfiere el interés que tenga el otorgante, se llama:",
+    "answer": "Escritura de renuncia (quitclaim deed)",
+    "distractors": [
+      "Escritura de garantía especial",
+      "Escritura de fideicomiso",
+      "Escritura de garantía general"
+    ],
+    "explanation": "Una escritura de renuncia transfiere el interés del otorgante sin ofrecer garantías sobre el título."
+  },
+  {
+    "id": 282,
+    "category": "Títulos y Escrituras",
+    "question": "La garantía de seisin (covenant of seisin) en una escritura significa que el otorgante:",
+    "answer": "Afirma que es dueño de la propiedad y tiene derecho a transferirla",
+    "distractors": [
+      "Garantiza que la propiedad nunca bajará de precio",
+      "Promete construir una casa nueva",
+      "Promete pagar los impuestos futuros del comprador"
+    ],
+    "explanation": "La garantía de seisin afirma que el otorgante es dueño de la propiedad y tiene derecho a transferirla."
+  },
+  {
+    "id": 283,
+    "category": "Títulos y Escrituras",
+    "question": "La cadena de título (chain of title) es:",
+    "answer": "El historial de transferencias y documentos que muestran quién ha sido dueño de la propiedad",
+    "distractors": [
+      "La tasación más reciente",
+      "El contrato de arrendamiento actual",
+      "La lista de impuestos futuros"
+    ],
+    "explanation": "La cadena de título es el historial de transferencias y documentos que muestran quién ha sido dueño de la propiedad."
+  },
+  {
+    "id": 284,
+    "category": "Títulos y Escrituras",
+    "question": "Una acción para quitar una nube sobre el título y aclarar quién es el dueño se llama:",
+    "answer": "Acción para quietar el título (quiet title action)",
+    "distractors": [
+      "Acción de zonificación",
+      "Acción de desalojo",
+      "Acción de expropiación"
+    ],
+    "explanation": "Una acción para quietar el título busca aclarar la propiedad y eliminar reclamos en disputa sobre el título."
+  },
+  {
+    "id": 285,
+    "category": "Títulos y Escrituras",
+    "question": "Un comprador que recibe una escritura y la registra en los registros públicos del condado obtiene, principalmente:",
+    "answer": "Aviso público de su interés en la propiedad",
+    "distractors": [
+      "Garantía de que el precio subirá",
+      "Exención de impuestos para siempre",
+      "Derecho a no pagar el préstamo"
+    ],
+    "explanation": "Registrar una escritura da aviso público del interés del comprador en la propiedad."
+  },
+  {
+    "id": 286,
+    "category": "Valuación",
+    "question": "La obsolescencia funcional (functional obsolescence) ocurre cuando:",
+    "answer": "El diseño de la propiedad ya no es útil o deseable, como un dormitorio sin acceso a un baño",
+    "distractors": [
+      "El mercado en general baja",
+      "El techo se daña por falta de mantenimiento",
+      "Una fábrica ruidosa se construye al lado"
+    ],
+    "explanation": "La obsolescencia funcional es la pérdida de valor por un diseño que ya no es útil o deseable."
+  },
+  {
+    "id": 287,
+    "category": "Valuación",
+    "question": "La depreciación física en el enfoque de costo se refiere a:",
+    "answer": "El desgaste por edad y uso de la estructura",
+    "distractors": [
+      "Un error en la tasación",
+      "Un cambio en la zonificación",
+      "Una caída en la demanda del barrio"
+    ],
+    "explanation": "La depreciación física es la pérdida de valor por el desgaste por edad y uso de la estructura."
+  },
+  {
+    "id": 288,
+    "category": "Valuación",
+    "question": "En el enfoque de costo, el costo de reproducción (reproduction cost) significa:",
+    "answer": "El costo de construir una réplica exacta de la estructura",
+    "distractors": [
+      "El valor de mercado sin ajustes",
+      "El costo de comprar el terreno solamente",
+      "El ingreso neto de la propiedad"
+    ],
+    "explanation": "El costo de reproducción es el costo de construir una réplica exacta de la estructura existente."
+  },
+  {
+    "id": 289,
+    "category": "Valuación",
+    "question": "En el enfoque de comparación de ventas, un ajuste por una concesión del vendedor, como pagar parte de los costos de cierre del comprador, normalmente:",
+    "answer": "Reduce el precio de la comparable para reflejar la concesión",
+    "distractors": [
+      "Se ignora en todos los casos",
+      "Solo se aplica al precio de lista",
+      "Aumenta siempre el precio de la comparable"
+    ],
+    "explanation": "Un ajuste por concesión del vendedor reduce el precio de la comparable para reflejar el beneficio recibido por el comprador."
+  },
+  {
+    "id": 290,
+    "category": "Valuación",
+    "question": "Al reconciliar valores de varias comparables, el tasador normalmente da más peso a:",
+    "answer": "La comparable más similar y con los ajustes más confiables",
+    "distractors": [
+      "La comparable con el precio más alto",
+      "El promedio simple sin analizar las diferencias",
+      "La comparable más antigua"
+    ],
+    "explanation": "En la reconciliación se da más peso a la comparable más similar y con los ajustes más confiables."
+  },
+  {
+    "id": 291,
+    "category": "Violaciones",
+    "question": "Un broker que mezcla dinero de clientes con su dinero personal en su cuenta de operación está cometiendo:",
+    "answer": "Mezcla indebida de fondos (commingling)",
+    "distractors": [
+      "Negociación sin licencia",
+      "Práctica de listado abierto",
+      "Publicidad engañosa"
+    ],
+    "explanation": "Mezclar dinero de clientes con dinero personal del broker es commingling y está prohibido."
+  },
+  {
+    "id": 292,
+    "category": "Violaciones",
+    "question": "Un licensee que hace una afirmación falsa a sabiendas para que un comprador cierre una compra está cometiendo:",
+    "answer": "Fraude (misrepresentation intencional)",
+    "distractors": [
+      "Un error de cálculo sin importancia",
+      "Un acto ministerial",
+      "Una práctica de listado abierto"
+    ],
+    "explanation": "Hacer una afirmación falsa a sabiendas para inducir una compra es fraude."
+  },
+  {
+    "id": 293,
+    "category": "Violaciones",
+    "question": "Un licensee que no entrega a su broker los fondos de escrow recibidos de un cliente está violando su deber de:",
+    "answer": "Entrega y rendición de cuentas (accounting)",
+    "distractors": [
+      "Publicidad",
+      "Zonificación",
+      "Tasación"
+    ],
+    "explanation": "El licensee debe entregar con prontitud a su broker los fondos recibidos y rendir cuentas de ellos."
+  },
+  {
+    "id": 294,
+    "category": "Violaciones",
+    "question": "Un broker que cobra una comisión sin tener un acuerdo válido y sin ser la causa procuradora (procuring cause) de la venta, en general:",
+    "answer": "No tiene derecho a cobrar esa comisión",
+    "distractors": [
+      "Puede cobrarla si el vendedor está de acuerdo después",
+      "Debe cobrarla al comprador siempre",
+      "Puede cobrarla de todas formas"
+    ],
+    "explanation": "Sin un acuerdo válido y sin ser la causa procuradora, en general no existe derecho a cobrar la comisión."
+  },
+  {
+    "id": 295,
+    "category": "Violaciones",
+    "question": "Un licensee que practica bienes raíces con una licencia vencida y sin renovar está:",
+    "answer": "Practicando sin licencia vigente",
+    "distractors": [
+      "Exento por tener experiencia",
+      "Practicando con una licencia válida por gracia automática",
+      "Protegido si trabaja para un broker"
+    ],
+    "explanation": "Practicar con una licencia vencida y sin renovar es practicar sin licencia vigente."
+  },
+  {
+    "id": 296,
+    "category": "Zonificación",
+    "question": "Un plan integral (comprehensive plan) de un gobierno local es:",
+    "answer": "El plan a largo plazo que guía el uso futuro de la tierra en la comunidad",
+    "distractors": [
+      "El permiso para construir una casa",
+      "El contrato de compraventa de un terreno",
+      "La zonificación de un solo lote"
+    ],
+    "explanation": "Un plan integral es el plan a largo plazo que guía el uso futuro de la tierra en una comunidad."
+  },
+  {
+    "id": 297,
+    "category": "Zonificación",
+    "question": "Un uso no conforme (nonconforming use) es un uso que:",
+    "answer": "Existía legalmente antes de la zonificación actual y puede continuar aunque ya no cumpla la nueva norma",
+    "distractors": [
+      "Nunca fue legal y debe detenerse de inmediato siempre",
+      "Es un uso industrial en zona residencial recién creado",
+      "Es un uso nuevo aprobado por varianza"
+    ],
+    "explanation": "Un uso no conforme existía legalmente antes de la norma actual y puede continuar aunque ya no la cumpla."
+  },
+  {
+    "id": 298,
+    "category": "Zonificación",
+    "question": "Un retroceso (setback) en zonificación es:",
+    "answer": "La distancia mínima exigida entre una construcción y el límite de la propiedad",
+    "distractors": [
+      "El número de estacionamientos por casa",
+      "La altura máxima de un edificio comercial",
+      "El precio mínimo de un lote"
+    ],
+    "explanation": "Un setback es la distancia mínima exigida entre una construcción y el límite de la propiedad."
+  },
+  {
+    "id": 299,
+    "category": "Zonificación",
+    "question": "La zonificación por manchas (spot zoning) se refiere a:",
+    "answer": "Cambiar la zonificación de un solo lote para un uso distinto al de la zona que lo rodea, sin justificación pública",
+    "distractors": [
+      "Zonificar toda una ciudad de la misma forma",
+      "Crear un plan de desarrollo para toda una zona",
+      "Aprobar un uso no conforme antiguo"
+    ],
+    "explanation": "La zonificación por manchas cambia un solo lote a un uso distinto al de su zona sin justificación pública."
+  },
+  {
+    "id": 300,
+    "category": "Zonificación",
+    "question": "Un uso condicional (conditional use o special exception) es un uso que:",
+    "answer": "Está permitido solo con una aprobación especial porque puede afectar a la zona si no se controla",
+    "distractors": [
+      "Está prohibido en toda la zona sin excepción",
+      "Es un uso antiguo que ya no cumple la norma",
+      "Es un uso que no necesita ningún permiso"
+    ],
+    "explanation": "Un uso condicional está permitido solo con una aprobación especial porque puede afectar a la zona si no se controla."
   }
 ];
 
